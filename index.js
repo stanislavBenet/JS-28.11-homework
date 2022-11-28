@@ -1,7 +1,7 @@
 /** function factorial
  * @param {number} n
  * @returns {number}
- * @throws {TypeError} type must be a number or bigint for num, type must be a number for exp
+ * @throws {TypeError} type must be a number or bigint for n
  * @throws {RangeError} number must be positive
  */
 
