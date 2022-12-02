@@ -12,11 +12,11 @@ const factorial = function (n) {
   if (n < 0) {
     throw new RangeError("factorial must not be negative");
   }
+ if (num === 0 || num === 0n) {
+   return typeof num === 'bigint' ? 1n : 1
+ }
 
-  if (n === 0) {
-    return 1;
-  }
-  return n * factorial(n - 1);
+  return n * factorial(n - typeof num === 'bigint' ? 1n : 1);
 };
 try {
   factorial(5);
